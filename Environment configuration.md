@@ -1,0 +1,24 @@
+# Configure the working environment
+## 1、Download Source
+<pre><code>$  sudo apt­-get install build-­essential 
+$  sudo apt­-get install libgl1­-mesa­-dev 
+$  sudo apt­-get install libglu1­-mesa­-dev
+$  sudo apt­-get install freeglut3­-dev</code></pre>
+## 2、Install the package "glib2.0"
+<pre><code>$  sudo apt-get install libglib2.0-dev
+</code></pre>  
+### While I CMake the file "CMakeLists.txt" a problem  
+*"cmake aborts with an error message stating it cannot find GLUT Xi   
+LIBRARY and GLUT Xmu LIBRARY"*  
+### We could solve with  
+<pre><code>$  sudo apt-get install libxmu-dev libxi-dev</code></pre>
+## 3、Carry out simulation work
+### run the project, located at ./Velodyne_viewer/build/bin
+<pre><code>$  cd Velodyne_viewer/build/bin
+$  sudo chmod u+x run.sh
+$  ./run.sh</code></pre>
+### When running ./run.sh，a problem with "Pemission denied"  
+### we could solve with
+![](http://a1.qpic.cn/psb?/V10xhQuy3m7suY/Q.RGPa5MVLn1CGtb9A7MW4OT9aQ*0I4rxicrKvvxZQ8!/b/dGgBAAAAAAAA&bo=0QHTAQAAAAADByA!&rf=viewer_4)
+
+
